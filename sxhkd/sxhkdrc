@@ -10,10 +10,26 @@ super + Return
 alt + @space
 	rofi -show drun
 
+# file explorer
+super + {_,shift + }e
+	{kitty lf, thunar}
+
+# lock screen
+super + space + l
+	i3lock
+
 # make sxhkd reload its configuration files:
 super + r
 	pkill -USR1 -x sxhkd; \
 	bspc wm -r
+
+# raise and lower volume
+XF86Audio{Raise,Lower}Volume
+	pactl set-sink-volume @DEFAULT_SINK@ {+,-}10%; \
+	pactl set-sink-mute @DEFAULT_SINK@ 0
+
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
 
 #
 # bspwm hotkeys
