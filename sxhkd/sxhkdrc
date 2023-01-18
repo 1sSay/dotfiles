@@ -15,7 +15,7 @@ super + {_,shift + }e
 	{kitty lf, thunar}
 
 # lock screen
-super + l
+super + space + l
 	i3lock
 
 # make sxhkd reload its configuration files:
