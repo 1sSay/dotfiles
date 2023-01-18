@@ -19,5 +19,11 @@ ln -sfv $BASE_DIR/rofi ~/.config/rofi
 rm -rfv ~/.config/sxhkd
 ln -sfv $BASE_DIR/sxhkd ~/.config/sxhkd
 
+rm -rfv ~/.config/kitty
+ln -sfv $BASE_DIR/kitty ~/.config/kitty
+
+rm -rfv ~/.zshrc
+ln -sfv $BASE_DIR/.zshrc ~/.zshrc
+
 # chmod +x ~/.config/bspwm/bspwmrc
 # chmod +x ~/.config/sxhkd/sxhkdrc
