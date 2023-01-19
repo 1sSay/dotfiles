@@ -25,5 +25,8 @@ ln -sfv $BASE_DIR/kitty ~/.config/kitty
 rm -rfv ~/.zshrc
 ln -sfv $BASE_DIR/.zshrc ~/.zshrc
 
+rm -rfv ~/paru
+ln -sfv $BASE_DIR/paru ~/.config/paru
+
 # chmod +x ~/.config/bspwm/bspwmrc
 # chmod +x ~/.config/sxhkd/sxhkdrc
