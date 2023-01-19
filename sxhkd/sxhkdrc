@@ -18,6 +18,9 @@ super + g
 super + {_,shift + }e
 	{kitty lf, thunar}
 
+Print
+	flameshot gui
+
 # lock screen
 super + alt + l
 	i3lock
