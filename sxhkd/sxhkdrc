@@ -7,15 +7,22 @@ super + Return
 	kitty
 
 # program launcher
-alt + @space
+alt + space
 	rofi -show drun
+
+# open chrome
+super + g
+	google-chrome-stable
 
 # file explorer
 super + {_,shift + }e
 	{kitty lf, thunar}
 
+Print
+	flameshot gui
+
 # lock screen
-super + space + l
+super + alt + l
 	i3lock
 
 # make sxhkd reload its configuration files:
