@@ -1,3 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env sh
 
-ln -sf hypr/hyprland.conf ~/.config/hypr/hyprland.conf
+BASE_DIR=/data/Documents/dotfiles-hyprland
+
+mkdir ~/.config
+
+rm -rfv ~/.config/hypr
+ln -sfv $BASE_DIR/hypr ~/.config/hypr
