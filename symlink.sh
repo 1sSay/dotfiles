@@ -18,3 +18,6 @@ ln -sfv $BASE_DIR/.zshrc ~/.zshrc
 
 rm -rfv ~/.config/paru
 ln -sfv $BASE_DIR/paru ~/.config/paru
+
+rm -rfv ~/.config/eww
+ln -sfv $BASE_DIR/eww ~/.config/eww
