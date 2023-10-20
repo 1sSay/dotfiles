@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-BASE_DIR=/data/Documents/dotfiles-hyprland
+BASE_DIR=$HOME/Documents/dotfiles-hyprland
 
 mkdir ~/.config
 
