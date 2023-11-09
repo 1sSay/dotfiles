@@ -21,3 +21,6 @@ ln -sfv $BASE_DIR/paru ~/.config/paru
 
 rm -rfv ~/.config/eww
 ln -sfv $BASE_DIR/eww ~/.config/eww
+
+rm -rfv ~/.config/wofi
+ln -sfv $BASE_DIR/wofi ~/.config/wofi
