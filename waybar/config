@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces", "hypr/mode", "hypr/scratchpad", "custom/media"],
     "modules-center": ["hypr/window"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "keyboard-state", "battery", "clock"],
+    "modules-right": ["brightness", "pulseaudio", "network", "cpu", "memory", "temperature", "keyboard-state", "battery", "clock"],
     // Modules configuration
     // "hyprland/workspaces": {
     //     "disable-scroll": true,
