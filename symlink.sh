@@ -24,3 +24,6 @@ ln -sfv $BASE_DIR/eww ~/.config/eww
 
 rm -rfv ~/.config/wofi
 ln -sfv $BASE_DIR/wofi ~/.config/wofi
+
+rm -rfv ~/.config/scripts
+ln -sfv $BASE_DIR/scripts ~/.config/scripts
