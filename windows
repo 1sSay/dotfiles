@@ -1,0 +1,2 @@
+#/bin/bash
+grub-reboot 3 && reboot
