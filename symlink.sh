@@ -27,3 +27,6 @@ ln -sfv $BASE_DIR/wofi ~/.config/wofi
 
 rm -rfv ~/.config/scripts
 ln -sfv $BASE_DIR/scripts ~/.config/scripts
+
+rm -rfv ~/.config/mako
+ln -sfv $BASE_DIR/mako ~/.config/mako
