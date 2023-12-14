@@ -1,0 +1,7 @@
+#!/bin/bash
+bluetoothctl power on
+bluetoothctl agent on
+bluetoothctl -t 3 scan on
+bluetoothctl pair E4:41:22:E0:F9:29 
+bluetoothctl scan off
+bluetoothctl connect E4:41:22:E0:F9:29

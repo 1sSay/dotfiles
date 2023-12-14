@@ -1,0 +1,2 @@
+#!/bin/bash
+bluetoothctl disconnect E4:41:22:E0:F9:29
