@@ -30,3 +30,12 @@ ln -sfv $BASE_DIR/scripts ~/.config/scripts
 
 rm -rfv ~/.config/mako
 ln -sfv $BASE_DIR/mako ~/.config/mako
+
+sudo mkdir /etc/sddm.conf.d
+sudo rm -rfv /etc/sddm.conf.d/sddm.conf
+sudo ln -sfv $BASE_DIR/sddm.conf.d/sddm.conf /etc/sddm.conf.d/sddm.conf
+sudo rm -rfv /usr/share/sddm/faces/issay.face.icon
+sudo ln -sfv $BASE_DIR/sddm/ExaltedOrb.jpg /usr/share/sddm/faces/issay.face.icon
+
+rm -rfv ~/.config/eww
+ln -sfv $BASE_DIR/eww ~/.config/eww
