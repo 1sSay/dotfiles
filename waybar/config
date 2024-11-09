@@ -12,7 +12,7 @@
         "format": "<span style=\"italic\">{}</span>"
     },
     "clock": {
-    	"timezone": "Europe/Moscow",
+    	"timezone": "UTC",
 	"format": "{:%H:%M - %d.%m}",
     },
     "battery": {
