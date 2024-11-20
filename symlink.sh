@@ -31,6 +31,9 @@ ln -sfv $BASE_DIR/scripts ~/.config/scripts
 rm -rfv ~/.config/mako
 ln -sfv $BASE_DIR/mako ~/.config/mako
 
+rm -rfv ~/.config/nvim
+ln -sfv $BASE_DIR/nvim ~/.config/nvim
+
 sudo mkdir /etc/sddm.conf.d
 sudo rm -rfv /etc/sddm.conf.d/sddm.conf
 sudo ln -sfv $BASE_DIR/sddm.conf.d/sddm.conf /etc/sddm.conf.d/sddm.conf
