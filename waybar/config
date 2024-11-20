@@ -7,12 +7,26 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "network", "temperature", "battery"],
+    "modules-right": ["custom/weather", "pulseaudio", "network", "temperature", "battery"],
     "hypr/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
+    "hyprland/workspaces": {
+    	"active-only": false,
+	"all-outputs": true,
+	"format": "{icon}",
+	"format-icons": {
+		"1": "",
+		"2": "",
+		"3": "",
+        "4": "",
+	},
+	"persistent-workspaces": {
+		"*": 8,
+	}	
+    },
     "clock": {
-    	"timezone": "UTC",
+    	// "timezone": "UTC",
 	"format": "{:%H:%M - %d.%m}",
     },
     "battery": {
@@ -44,9 +58,9 @@
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-bluetooth": "{volume}% {icon}  {format_source}",
+        "format-bluetooth-muted": "{volue}%   {icon}  {format_source}",
+        "format-muted": "{volume}%  {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -59,6 +73,13 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
+    },
+    "custom/weather": {
+        "format": "{}",
+        "tooltip": true,
+        "interval": 3600,
+        "exec": "python ~/Documents/dotfiles/waybar/waybar-wttr.py",
+        "return-type": "json"
     },
 }
 
